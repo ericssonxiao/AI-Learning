@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section ><section data-markdown><script type="text/template"># 机器学习
+
+- 任务
+
+- 经验
+
+- 性能
+</script></section><section data-markdown><script type="text/template">
+# Python的优势
+- 方便调试的解释性语言
+- 跨平台执行作业
+- 广泛的应用编程接口
+- 丰富完备的开源工具包
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Python常用工具包
+- NumPy & SciPy
+- Matplotlib
+- Scikit-learn
+- Pandas
+- PyTorch
+- TensorFlow
+</script></section><section data-markdown><script type="text/template">
+# Python基础
+- 基本语法
+- 基础数据类型
+- 数据运算
+- 流程控制
+- 函数模块设计
+- 编程库的导入
+- 综合实践
+</script></section><section data-markdown><script type="text/template">
+# 机器学习基础
+- 监督学习
+	- 分类学习
+	- 回归预测
+- 无监督学习
+	- 数据聚类
+	- 特征降维
+
+
+  </script></section></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
